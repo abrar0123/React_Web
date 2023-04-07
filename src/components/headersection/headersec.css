@@ -1,0 +1,29 @@
+.headsection {
+  height: 80vh;
+  padding: 20px 60px;
+  background: linear-gradient(to right, rgb(167, 7, 7), rgb(42, 42, 244));
+}
+.headerMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.headsectionContainer {
+  display: flex;
+  /* margin-top: 100px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(204, 13, 13);
+}
+.headsection h1 {
+  font-size: 40px;
+}
+.headsection P {
+  font-size: 18px;
+  font-weight: 500;
+
+  /* color: white; */
+}
