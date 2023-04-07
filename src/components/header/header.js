@@ -15,12 +15,12 @@ export default function header() {
               <a href=""> Home</a>
             </li>
             <li>
-              <a href=""> Courses</a>
+              <a href=""> My Courses</a>
             </li>
             <li>
               <a href=""> Services</a>
             </li>
-            
+
             <li>
               <a href=""> Contact </a>
             </li>
