@@ -18,11 +18,13 @@
   align-items: center;
   color: rgb(204, 13, 13);
 }
+
 .headsection h1 {
+  margin: 0;
   font-size: 40px;
 }
-.headsection P {
-  font-size: 18px;
+.headsection p {
+  /* font-size: 18px; */
   font-weight: 500;
 
   /* color: white; */
