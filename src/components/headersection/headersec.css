@@ -1,5 +1,5 @@
 .headsection {
-  height: 80vh;
+  height: 90vh;
   padding: 20px 60px;
   background: linear-gradient(to right, rgb(167, 7, 7), rgb(42, 42, 244));
 }
@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 .headsectionContainer {

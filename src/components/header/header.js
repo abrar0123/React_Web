@@ -4,7 +4,7 @@ import Logo1 from "../../assets/Icons/logo4.png";
 export default function header() {
   return (
     <header>
-      <div className="container">
+      <div className="headercontainer">
         <div className="imgcontainer">
           <img src={Logo1} alt="" />
         </div>
@@ -12,27 +12,27 @@ export default function header() {
         <nav>
           <ul>
             <li>
-              <a href=""> Home</a>
+              <a href="#"> Home</a>
             </li>
             <li>
-              <a href="">Courses</a>
+              <a href="#">Skills</a>
             </li>
             <li>
-              <a href=""> Services</a>
+              <a href="#"> About</a>
             </li>
 
             <li>
-              <a href=""> Contact </a>
+              <a href="#"> Contact </a>
             </li>
           </ul>
         </nav>
         <nav>
           <ul>
             <li>
-              <a href=""> Sign up</a>
+              <a href="#"> Sign up</a>
             </li>
             <li>
-              <a href=""> Log In </a>
+              <a href="#"> Log In </a>
             </li>
           </ul>
         </nav>

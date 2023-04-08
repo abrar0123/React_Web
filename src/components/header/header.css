@@ -1,13 +1,13 @@
 header {
   background-color: rgb(79, 7, 7);
   padding: 20px 30px;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   box-sizing: border-box;
   border-bottom: 5px solid red;
   z-index: 1;
 }
-.container {
+.headercontainer {
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -23,26 +23,26 @@ header {
   height: 100%;
 }
 
-nav ul {
+.headercontainer nav ul {
   list-style: none;
   margin: 0px;
 }
 
-nav ul li {
+.headercontainer nav ul li {
   display: inline-block;
   margin-right: 10px;
   /* margin: 0px; */
   padding: 0px;
 }
 
-header nav ul li a {
+.headercontainer nav ul li a {
   color: rgb(244, 51, 51);
   font-size: 18px;
   font-weight: bold;
   text-decoration: none;
   padding: 5px 10px;
 }
-header nav ul li a:hover {
+.headercontainer nav ul li a:hover {
   background-color: white;
   color: brown;
   border-radius: 3px;
