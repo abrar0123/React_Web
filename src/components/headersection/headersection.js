@@ -7,22 +7,14 @@ export default function headersection() {
   return (
     <Card className="headsection">
       <div className="headerMainContainer">
-        <div style={{ width: "220px" }}>
-          <img
-            style={{
-              width: "100%",
-              height: "100%",
-              borderRadius: "10px",
-              opacity: 0.75,
-              Zindex: 998,
-              boxShadow: "2px 2px 10px brown",
-            }}
-            src={pic}
-            alt=""
-          />
+        <div className="imageContainer">
+          <img src={pic} alt="" />
         </div>
         <div className="headsectionContainer">
           <h1>★彡 Mʏ Pᴏʀᴛꜰᴏʟɪᴏ Site 彡★</h1>
+
+          {/* npm i react-typical@latest --legacy-peer-depsatest --legacy-peer-deps */}
+
           {/* <h2 style={{ fontSize: "30px", color: "rgb(188, 204, 13)" }}>
             <Typical
               // style={{ fontSize: "30px" }}

@@ -1,24 +1,34 @@
 import React from "react";
 import "./courses.css";
-
+import Card from "../UI/Card/card";
 const Coursedetails = (props) => {
   const MyCourses = props.mycourses;
 
   return (
-    <>
+    <React.Fragment>
       {MyCourses &&
         MyCourses.map((item) => {
           return (
-            <div className="coursecCard">
-              <h2 style={{ margin: 0, color: "rgb(204, 199, 199)" }}>
-                {item.name}
-              </h2>
-              <h3>{item.exp}</h3>
-              <p>{item.des}</p>
-            </div>
+            <Card className="coursecCard">
+              <div className="flexContainer">
+                <div className="titlecontainer">
+                  <h2>{item.name}</h2>
+                </div>
+
+                <h3>{item.exp}</h3>
+              </div>
+
+              <p
+                style={{
+                  // color: " rgb(53, 52, 52)",
+                }}
+              >
+                {item.des}
+              </p>
+            </Card>
           );
         })}
-    </>
+    </React.Fragment>
   );
 };
 
