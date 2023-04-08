@@ -15,7 +15,7 @@ export default function header() {
               <a href=""> Home</a>
             </li>
             <li>
-              <a href=""> My Courses</a>
+              <a href="">Courses</a>
             </li>
             <li>
               <a href=""> Services</a>
