@@ -3,7 +3,7 @@ import Coursedetails from "./coursedetails";
 import "./courses.css";
 import Card from "../UI/Card/card";
 
-const CourseSection = () => {
+const CourseSection = ({ref}) => {
   const mycourses = [
     {
       id: 1,
@@ -44,7 +44,7 @@ const CourseSection = () => {
   ];
 
   return (
-    <Card className="section">
+    <Card className="section" ref={ref}>
       <h1>My Skills</h1>
 
       <div className="coursecontainer">
