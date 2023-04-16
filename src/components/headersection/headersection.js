@@ -6,20 +6,23 @@ import FlexColumn from "../UI/Card/FlexColumn";
 import FlexRow from "../UI/Card/FlexRow";
 import Button from "../UI/button/Button";
 
-import pic from "../../assets/images/AbrarPic.JPEG";
+import pic from "../../assets/Icons/removebgAbrar (2).png";
 
 // import Typical from "react-typical";
 
 export default function headersection() {
   return (
     <Card className="headsection">
-      <FlexRow className="headerMainContainer">
-        <Container className="imageContainer">
-          <img src={pic} alt="" />
-        </Container>
-
+      <FlexRow
+        style={{
+          // alignItems: "flex-start",
+          color: "white",
+        }}
+      >
         <FlexColumn className="secondarysec">
-          <h1>Hi, Welcome to my Portfolio</h1>
+          <h1 style={{ alignItems: "center", color: "white" }}>
+            Hi, Welcome to my Portfolio
+          </h1>
 
           {/* npm i react-typical@latest --legacy-peer-depsatest --legacy-peer-deps */}
 
@@ -53,7 +56,6 @@ export default function headersection() {
                 border: "2px solid red",
                 marginRight: "20px",
                 padding: "10px 20px",
-
               }}
             >
               Read More
@@ -70,6 +72,9 @@ export default function headersection() {
             </Button>
           </FlexRow>
         </FlexColumn>
+        <Container className="imageContainer">
+          <img src={pic} alt="" />
+        </Container>
       </FlexRow>
     </Card>
   );

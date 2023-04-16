@@ -5,7 +5,9 @@
   background-color: black;
 }
 .headerMainContainer {
-  margin:60px 0px;
+  margin: 40px 0px;
+  background-color: aliceblue;
+  
 }
 
 .headerMainContainer .secondarysec {
@@ -21,15 +23,22 @@
   margin: 0px;
 }
 .imageContainer {
-  width: 300px;
-  height: 300px;
+  /* width: 300px; */
+  height: 400px;
 }
-
 .imageContainer img {
   width: 100%;
   height: 100%;
+  opacity: 0.90;
+  box-shadow: 1px 1px 10px rgb(20, 20, 20);
+  border-radius: 100px;
+
+}
+.imageContainer .img1 {
+  width: 100%;
+  height: 100%;
   border-radius: 60%;
-  object-fit: cover;
+  object-fit: contain;
   opacity: 0.75;
   padding: 0px 5px 15px 5px;
   border-bottom: 5px solid rgb(241, 231, 231);
