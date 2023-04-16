@@ -1,17 +1,25 @@
 import React from "react";
 import "./headersec.css";
 import Card from "../UI/Card/card";
+import Container from "../UI/Card/Container";
+import FlexColumn from "../UI/Card/FlexColumn";
+import FlexRow from "../UI/Card/FlexRow";
+import Button from "../UI/button/Button";
+
 import pic from "../../assets/images/AbrarPic.JPEG";
+
 // import Typical from "react-typical";
+
 export default function headersection() {
   return (
     <Card className="headsection">
-      <div className="headerMainContainer">
-        <div className="imageContainer">
+      <FlexRow className="headerMainContainer">
+        <Container className="imageContainer">
           <img src={pic} alt="" />
-        </div>
-        <div className="headsectionContainer">
-          <h1>★彡 Mʏ Pᴏʀᴛꜰᴏʟɪᴏ Site 彡★</h1>
+        </Container>
+
+        <FlexColumn className="secondarysec">
+          <h1>Hi, Welcome to my Portfolio</h1>
 
           {/* npm i react-typical@latest --legacy-peer-depsatest --legacy-peer-deps */}
 
@@ -38,8 +46,31 @@ export default function headersection() {
             university of Gujrat
           </p>
           <p>Click to Visit my Latest Projects</p>
-        </div>
-      </div>
+          <FlexRow style={{ marginTop: "50px" }}>
+            <Button
+              style={{
+                backgroundColor: "transparent",
+                border: "2px solid red",
+                marginRight: "20px",
+                padding: "10px 20px",
+
+              }}
+            >
+              Read More
+            </Button>
+            <Button
+              style={{
+                backgroundColor: "red",
+                color: "white",
+                padding: "10px 20px",
+                border: "2px solid red",
+              }}
+            >
+              Latest Work
+            </Button>
+          </FlexRow>
+        </FlexColumn>
+      </FlexRow>
     </Card>
   );
 }

@@ -1,7 +1,10 @@
 import React from "react";
 import "./header.css";
-import Logo1 from "../../assets/Icons/logo4.png";
+import Logo1 from "../../assets/Icons/logo22.png";
+
 export default function header() {
+  const a = "https://looka.com/s/121222617";
+
   return (
     <header>
       <div className="headercontainer">
@@ -18,21 +21,17 @@ export default function header() {
               <a href="#">Skills</a>
             </li>
             <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#"> Services</a>
+            </li>
+            <li>
               <a href="#"> About</a>
             </li>
 
             <li>
               <a href="#"> Contact </a>
-            </li>
-          </ul>
-        </nav>
-        <nav>
-          <ul>
-            <li>
-              <a href="#"> Sign up</a>
-            </li>
-            <li>
-              <a href="#"> Log In </a>
             </li>
           </ul>
         </nav>
