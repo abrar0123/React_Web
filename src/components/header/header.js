@@ -8,8 +8,8 @@ import About from "../about/about";
 import Container from "../UI/Card/Container";
 import FlexRow from "../UI/Card/FlexRow";
 import Card from "../UI/Card/card";
-import { IoIosMenu, IoIosRemoveCircle } from "react-icons/io";
-import { BiCross } from "react-icons/bi";
+import { IoIosMenu } from "react-icons/io";
+import { AiFillCloseCircle } from "react-icons/ai";
 
 export default function Header() {
   const section1 = useRef(null);
@@ -28,7 +28,7 @@ export default function Header() {
   };
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 600) {
+      if (window.innerWidth < 780) {
         setIsOpen(true);
       } else {
         setIsOpen(false);
@@ -73,9 +73,6 @@ export default function Header() {
                 <li>
                   <a href="#">Projects</a>
                 </li>
-                <li>
-                  <a href="#"> Services</a>
-                </li>
 
                 <li>
                   <a href="#"> Contact </a>
@@ -86,8 +83,8 @@ export default function Header() {
           {sider && (
             <Card className="sidebar">
               <FlexRow>
-                <a href=""></a>
-                <BiCross
+                {/* <a href=""></a> */}
+                <AiFillCloseCircle
                   color="white"
                   size={25}
                   className="toggle"
@@ -107,9 +104,6 @@ export default function Header() {
                   </li>
                   <li>
                     <a href="#">Projects</a>
-                  </li>
-                  <li>
-                    <a href="#"> Services</a>
                   </li>
 
                   <li>

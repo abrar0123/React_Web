@@ -31,26 +31,19 @@ export default function About() {
     <Card className="about">
       <h1>About Me</h1>
 
-      <FlexCard className="aboutflexContainer">
-        <Container className="profileContainer">
-          <img src={Profile} />
-        </Container>
-        <FlexCard>
-          <FlexCard className="dataflexcontainer">
-            <AboutDetails myIndex={myIndex} />
-          </FlexCard>
+      <div className="dataflexcontainer">
+        <AboutDetails myIndex={myIndex} />
+      </div>
 
-          {Index === 1 ? (
-            <About_edu />
-          ) : Index === 2 ? (
-            <About_exp />
-          ) : Index === 3 ? (
-            <About_courses />
-          ) : (
-            <About_Contact items={items} />
-          )}
-        </FlexCard>
-      </FlexCard>
+      {Index === 1 ? (
+        <About_edu />
+      ) : Index === 2 ? (
+        <About_exp />
+      ) : Index === 3 ? (
+        <About_courses />
+      ) : (
+        <About_Contact items={items} />
+      )}
     </Card>
   );
 }

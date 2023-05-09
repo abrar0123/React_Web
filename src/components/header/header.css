@@ -17,11 +17,12 @@ header {
   /* margin-top: 50px; */
   padding-top: 30px;
   top: 0;
+  /* color: black; */
   right: 0;
   padding-right: 20px;
   box-sizing: border-box;
   height: 100%;
-  background-color: rgba(243, 13, 13, 0.8);
+  background-color: rgb(254, 252, 252, 0.35);
 }
 
 .sidebar .toggle {
