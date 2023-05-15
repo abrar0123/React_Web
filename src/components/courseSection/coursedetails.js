@@ -8,16 +8,20 @@ const Coursedetails = (props) => {
     <div className="coursecontainer">
       {MyCourses &&
         MyCourses.map((item) => {
+          // item?.topics &&
+          let myTopic = [];
+          if (item.topics) {
+            myTopic = Object.keys(item?.topics && item.topics);
+          }
+
           return (
             <Card className="coursecCard">
               <div className="flexContainer">
                 <div className="titlecontainer">
                   <h2>{item.name}</h2>
                 </div>
-
                 <h3>{item.exp}</h3>
               </div>
-
               <p
                 style={
                   {
@@ -27,6 +31,18 @@ const Coursedetails = (props) => {
               >
                 {item.des}
               </p>
+              {/* {item?.topics && (
+                <div className="topicbox">{item.topics.SemanticHTML[0]}</div>
+              )} */}
+              <div style={{ margin: "20px 0" }}>
+                <hr />
+              </div>
+              <div className="topicflex">
+                {myTopic &&
+                  myTopic.map((topic) => {
+                    return <div className="topicbox">{topic}</div>;
+                  })}
+              </div>
             </Card>
           );
         })}

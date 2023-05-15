@@ -14,21 +14,34 @@
 .coursecontainer {
   display: flex;
   gap: 25px;
-  justify-content: space-around;
-
+  justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+.topicflex {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+.topicbox {
+  padding: 5px 10px;
+  background-color: rgb(255, 68, 0, 0.39);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 1px 1px 5px rgb(74, 26, 26, 0.10);
 }
 
 .coursecCard {
   width: 340px;
-  height: 200px;
-  /* margin-bottom: 30px; */
-  background-color: transparent;
+  height: 325px;
+  background: linear-gradient(to right, rgb(137, 9, 9), rgb(232, 17, 96));
   padding: 10px 15px;
   /* border-radius: 10px; */
-  box-shadow: 3px 3px 10px rgba(39, 10, 10, 0.5);
+  box-shadow: 2px 2px 7px rgba(39, 10, 10, 0.35);
 }
+
 .flexContainer {
   display: flex;
   justify-content: space-between;
@@ -52,7 +65,9 @@
   color: rgb(231, 221, 221);
 }
 .coursecCard p {
-  color: rgb(25, 15, 15);
+  color: rgb(248, 230, 230, 0.9);
   font-size: 16px;
+  text-align: justify;
+  line-height: 1.4;
   font-weight: 500;
 }
