@@ -9,10 +9,10 @@ export default function about_Contact({ items }) {
     <Card>
       {items.map((item) => {
         return (
-          <FlexCard className="aboutcontact">
-            <p style={{ marginRight: "20px" }}>{item.title}</p>
+          <div className="flex aboutcontact">
+            <p style={{ marginRight: "10px" }}>{item.title}</p>
             <p>{item.name}</p>
-          </FlexCard>
+          </div>
         );
       })}
     </Card>

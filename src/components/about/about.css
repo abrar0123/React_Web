@@ -1,8 +1,16 @@
 .about {
-  padding: 20px 400px;
+  padding: 20px 30px;
   background: linear-gradient(to right, red, rgb(95, 6, 100));
+  /* width: 100%; */
+  height: max-content;
 }
-
+.flex {
+  display: flex;
+  align-items: center;
+}
+.btncontainer {
+  /* justify-content: center; */
+}
 .about h1 {
   color: rgb(239, 219, 219);
   text-align: center;
@@ -11,16 +19,16 @@
   margin-bottom: 40px;
 }
 .aboutflexContainer {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
+  flex-flow: row wrap;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .profileContainer {
   width: 400px;
   margin-right: 40px;
   height: 450px;
+  margin-bottom: 30px;
 }
 .profileContainer img {
   width: 100%;
@@ -67,6 +75,12 @@
 
 /*    educationContainer   */
 
+.educationContainer {
+  /* background-color: #fff; */
+  /* width: 400px; */
+  padding: 10px 20px;
+  height: max-content;
+}
 .educationContainer h3 {
   color: rgb(231, 221, 221);
   font-size: 30px;
@@ -75,15 +89,19 @@
   color: rgb(209, 236, 104);
 }
 .educationContainer p {
+  /* width: 100%; */
   width: 600px;
+  height: max-content;
   font-size: 18px;
   color: rgb(231, 221, 221);
 }
 
 /* aboutcourseContainer */
+
 .aboutcourseContainer {
   /* padding: 10px 15px; */
 }
+
 .aboutcourseContainer p {
   padding: 20px 15px;
   font-size: 20px;
@@ -98,24 +116,13 @@
 /* aboutcontact */
 
 .aboutcontact {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: flex-start;
+  /* flex-flow: row wrap; */
 }
 .aboutcontact .imgContainer {
   width: 40px;
   height: 40px;
   margin-right: 10px;
-}
-
-@media screen and (max-width: 800px) {
-  .about {
-    padding: 20px 50px;
-  }
-  .educationContainer p {
-    width: 100%;
-  }
 }
 
 .aboutcontact .imgContainer img {
@@ -130,4 +137,18 @@
   border-radius: 5px;
   padding: 7px 10px;
   color: white;
+}
+
+/*  responsive */
+
+@media screen and (max-width: 880px) {
+  .about {
+    padding: 20px 10px;
+  }
+  .educationContainer p {
+    width: 100%;
+  }
+  .btncontainer {
+    justify-content: center;
+  }
 }

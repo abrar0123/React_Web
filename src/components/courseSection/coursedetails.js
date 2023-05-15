@@ -5,7 +5,7 @@ const Coursedetails = (props) => {
   const MyCourses = props.mycourses;
 
   return (
-    <React.Fragment>
+    <div className="coursecontainer">
       {MyCourses &&
         MyCourses.map((item) => {
           return (
@@ -19,16 +19,18 @@ const Coursedetails = (props) => {
               </div>
 
               <p
-                style={{
-                  // color: " rgb(53, 52, 52)",
-                }}
+                style={
+                  {
+                    // color: " rgb(53, 52, 52)",
+                  }
+                }
               >
                 {item.des}
               </p>
             </Card>
           );
         })}
-    </React.Fragment>
+    </div>
   );
 };
 

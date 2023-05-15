@@ -12,17 +12,10 @@ import pic from "../../assets/Icons/removebgAbrar (2).png";
 
 export default function headersection() {
   return (
-    <Card className="headsection">
-      <FlexRow
-        style={{
-          // alignItems: "flex-start",
-          color: "white",
-        }}
-      >
+    <section className="headsection">
+      <div className="flex mainflexCntainer">
         <FlexColumn className="secondarysec">
-          <h1 style={{ alignItems: "center", color: "white" }}>
-            Hi, Welcome to my Portfolio
-          </h1>
+          <h1>Hi, Welcome to my Portfolio</h1>
 
           {/* npm i react-typical@latest --legacy-peer-depsatest --legacy-peer-deps */}
 
@@ -49,7 +42,7 @@ export default function headersection() {
             university of Gujrat
           </p>
           <p>Click to Visit my Latest Projects</p>
-          <FlexRow style={{ marginTop: "50px" }}>
+          <div style={{ marginTop: "50px" }}>
             <Button
               style={{
                 backgroundColor: "transparent",
@@ -70,12 +63,12 @@ export default function headersection() {
             >
               Latest Work
             </Button>
-          </FlexRow>
+          </div>
         </FlexColumn>
         <Container className="imageContainer">
           <img src={pic} alt="" />
         </Container>
-      </FlexRow>
-    </Card>
+      </div>
+    </section>
   );
 }

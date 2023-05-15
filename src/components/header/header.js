@@ -6,8 +6,6 @@ import CourseSection from "../courseSection/courseSection";
 import Headersection from "../headersection/headersection";
 import About from "../about/about";
 import Container from "../UI/Card/Container";
-import FlexRow from "../UI/Card/FlexRow";
-import Card from "../UI/Card/card";
 import { IoIosMenu } from "react-icons/io";
 import { AiFillCloseCircle } from "react-icons/ai";
 
@@ -20,19 +18,22 @@ export default function Header() {
     ref.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the component
   };
 
-  const [isOpen, setIsOpen] = useState(false);
-  const [sider, setsider] = useState(false);
+  const [lessWidth, setlessWidth] = useState(false);
+  const [sider, setsider] = useState("navBar");
 
   const sideHandler = () => {
-    setsider(true);
+    setsider("navBar activeNavBar");
+  };
+  const closeMenu = () => {
+    setsider("navBar removeeNavBar");
   };
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 780) {
-        setIsOpen(true);
+      if (window.innerWidth < 768) {
+        setlessWidth(true);
       } else {
-        setIsOpen(false);
-        setsider(false);
+        setlessWidth(false);
+        // setsider(false);
       }
     };
 
@@ -46,74 +47,47 @@ export default function Header() {
   return (
     <>
       <header>
-        <FlexRow className="headercontainer">
+        <div className="flex headercontainer">
           <Container className="imgcontainer">
             <img src={Logo1} alt="" />
           </Container>
+          <div className={sider}>
+            <ul className="flex navList">
+              <li className="navItem" onClick={() => scrollToRef(section1)}>
+                <a href="#Home"> Home</a>
+              </li>
+              <li className="navItem" onClick={() => scrollToRef(section2)}>
+                <a href="#Skills">Skills</a>
+              </li>
+              <li className="navItem" onClick={() => scrollToRef(section3)}>
+                <a href="#About"> About</a>
+              </li>
+              <li className="navItem">
+                <a href="#">Projects</a>
+              </li>
 
-          {isOpen ? (
+              <li className="navItem">
+                <a href="#"> Contact </a>
+              </li>
+              {lessWidth && (
+                <AiFillCloseCircle
+                  size={30}
+                  color="white"
+                  className="toggleMenu"
+                  onClick={closeMenu}
+                />
+              )}
+            </ul>
+          </div>
+          {lessWidth && (
             <IoIosMenu
-              className="toggle"
+              className="menuBar"
               color="white"
-              size={25}
+              size={35}
               onClick={sideHandler}
             />
-          ) : (
-            <nav>
-              <ul>
-                <li onClick={() => scrollToRef(section1)}>
-                  <a href="#Home"> Home</a>
-                </li>
-                <li onClick={() => scrollToRef(section2)}>
-                  <a href="#Skills">Skills</a>
-                </li>
-                <li onClick={() => scrollToRef(section3)}>
-                  <a href="#About"> About</a>
-                </li>
-                <li>
-                  <a href="#">Projects</a>
-                </li>
-
-                <li>
-                  <a href="#"> Contact </a>
-                </li>
-              </ul>
-            </nav>
           )}
-          {sider && (
-            <Card className="sidebar">
-              <FlexRow>
-                {/* <a href=""></a> */}
-                <AiFillCloseCircle
-                  color="white"
-                  size={25}
-                  className="toggle"
-                  onClick={() => setsider(false)}
-                />
-              </FlexRow>
-              <nav>
-                <ul>
-                  <li onClick={() => scrollToRef(section1)}>
-                    <a href="#Home"> Home</a>
-                  </li>
-                  <li onClick={() => scrollToRef(section2)}>
-                    <a href="#Skills">Skills</a>
-                  </li>
-                  <li onClick={() => scrollToRef(section3)}>
-                    <a href="#About"> About</a>
-                  </li>
-                  <li>
-                    <a href="#">Projects</a>
-                  </li>
-
-                  <li>
-                    <a href="#"> Contact </a>
-                  </li>
-                </ul>
-              </nav>
-            </Card>
-          )}
-        </FlexRow>
+        </div>
       </header>
       {/* <div ref={section1Ref}>dslkdlksldk</div> */}
       {/* <Headersection /> */}

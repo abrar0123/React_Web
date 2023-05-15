@@ -47,9 +47,7 @@ const CourseSection = () => {
     <Card className="section">
       <h1>My Skills</h1>
 
-      <div className="coursecontainer">
-        <Coursedetails mycourses={mycourses} />
-      </div>
+      <Coursedetails mycourses={mycourses} />
     </Card>
   );
 };

@@ -18,7 +18,7 @@ export default function AboutDetails(props) {
     props.myIndex(id);
   };
   return (
-    <React.Fragment>
+    <div className="flex btncontainer ">
       {data.map((item, i) => {
         return (
           <div className="datacontainer" key={i}>
@@ -33,6 +33,6 @@ export default function AboutDetails(props) {
           </div>
         );
       })}
-    </React.Fragment>
+    </div>
   );
 }
