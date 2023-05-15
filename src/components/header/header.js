@@ -8,11 +8,13 @@ import About from "../about/about";
 import Container from "../UI/Card/Container";
 import { IoIosMenu } from "react-icons/io";
 import { AiFillCloseCircle } from "react-icons/ai";
+import Frontend from "../MyProjects/frontend";
 
 export default function Header() {
   const section1 = useRef(null);
   const section2 = useRef(null);
   const section3 = useRef(null);
+  const section4 = useRef(null);
 
   const scrollToRef = (ref) => {
     ref.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the component
@@ -62,8 +64,8 @@ export default function Header() {
               <li className="navItem" onClick={() => scrollToRef(section3)}>
                 <a href="#About"> About</a>
               </li>
-              <li className="navItem">
-                <a href="#">Projects</a>
+              <li className="navItem" onClick={() => scrollToRef(section4)}>
+                <a href="#Projects">Projects</a>
               </li>
 
               <li className="navItem">
@@ -101,6 +103,9 @@ export default function Header() {
       </div>
       <div ref={section3}>
         <About />
+      </div>
+      <div ref={section4}>
+        <Frontend />
       </div>
     </>
   );

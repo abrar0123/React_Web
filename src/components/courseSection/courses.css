@@ -13,7 +13,9 @@
 
 .coursecontainer {
   display: flex;
+  gap: 25px;
   justify-content: space-around;
+
   align-items: center;
   flex-flow: row wrap;
 }
@@ -21,12 +23,11 @@
 .coursecCard {
   width: 340px;
   height: 200px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   background-color: transparent;
   padding: 10px 15px;
-  /* border: 1px solid rgb(170, 20, 20); */
-  border-radius: 10px;
-  box-shadow: 2px 2px 10px rgba(57, 5, 5, 0.7);
+  /* border-radius: 10px; */
+  box-shadow: 3px 3px 10px rgba(39, 10, 10, 0.5);
 }
 .flexContainer {
   display: flex;

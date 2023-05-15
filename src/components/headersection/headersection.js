@@ -1,9 +1,7 @@
 import React from "react";
 import "./headersec.css";
-import Card from "../UI/Card/card";
 import Container from "../UI/Card/Container";
 import FlexColumn from "../UI/Card/FlexColumn";
-import FlexRow from "../UI/Card/FlexRow";
 import Button from "../UI/button/Button";
 
 import pic from "../../assets/Icons/removebgAbrar (2).png";
@@ -15,7 +13,10 @@ export default function headersection() {
     <section className="headsection">
       <div className="flex mainflexCntainer">
         <FlexColumn className="secondarysec">
-          <h1>Hi, Welcome to my Portfolio</h1>
+          <h2 style={{ color: "red" }}>SOFTWARE ENGINNER</h2>
+          <h1>
+            Hi, Welcome to <span style={{ color: "red" }}>my Portfolio </span>
+          </h1>
 
           {/* npm i react-typical@latest --legacy-peer-depsatest --legacy-peer-deps */}
 
