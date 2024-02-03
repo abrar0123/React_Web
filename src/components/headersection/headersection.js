@@ -35,12 +35,12 @@ export default function headersection() {
             />
           </h2> */}
           <p>
-            Hi, I am Abrar-Hussain, I am professional Web developer and Mobile
-            Developer,
+            Hi, I am Abrar-Hussain, I am professional React developer and Mobile
+            Developer (React Native),
           </p>
           <p>
             My Qualification is BS (hons) in Software Engineering from the
-            university of Gujrat
+            university of Gujrat. 
           </p>
           <p>Click to Visit my Latest Projects</p>
           <div style={{ marginTop: "50px" }}>
