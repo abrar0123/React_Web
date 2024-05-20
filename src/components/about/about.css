@@ -20,7 +20,7 @@
 }
 .aboutflexContainer {
   flex-flow: row wrap;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
 }
 
@@ -28,7 +28,6 @@
   width: 400px;
   margin-right: 40px;
   height: 450px;
-  margin-bottom: 30px;
 }
 .profileContainer img {
   width: 100%;
