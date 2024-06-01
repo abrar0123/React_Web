@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import "./header.css";
-import Logo1 from "../../assets/Icons/logo22.png";
-import { useRef } from "react";
-import CourseSection from "../courseSection/courseSection";
-import Headersection from "../headersection/headersection";
-import About from "../about/about";
-import Container from "../UI/Card/Container";
-import { IoIosMenu } from "react-icons/io";
-import { AiFillCloseCircle } from "react-icons/ai";
-import Frontend from "../MyProjects/frontend";
+import React, { useEffect, useState } from 'react';
+import './header.css';
+import Logo1 from '../../assets/images/logo111.png';
+import { useRef } from 'react';
+import CourseSection from '../courseSection/courseSection';
+import Headersection from '../headersection/headersection';
+import About from '../about/about';
+import Container from '../UI/Card/Container';
+import { IoIosMenu } from 'react-icons/io';
+import { AiFillCloseCircle } from 'react-icons/ai';
+import Frontend from '../MyProjects/frontend';
 
 export default function Header() {
   const section1 = useRef(null);
@@ -17,17 +17,17 @@ export default function Header() {
   const section4 = useRef(null);
 
   const scrollToRef = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" }); // Scroll to the component
+    ref.current.scrollIntoView({ behavior: 'smooth' }); // Scroll to the component
   };
 
   const [lessWidth, setlessWidth] = useState(false);
-  const [sider, setsider] = useState("navBar");
+  const [sider, setsider] = useState('navBar');
 
   const sideHandler = () => {
-    setsider("navBar activeNavBar");
+    setsider('navBar activeNavBar');
   };
   const closeMenu = () => {
-    setsider("navBar removeeNavBar");
+    setsider('navBar removeeNavBar');
   };
   useEffect(() => {
     const handleResize = () => {
@@ -39,20 +39,28 @@ export default function Header() {
       }
     };
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
 
   return (
     <>
       <header>
-        <div className="flex headercontainer">
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+          }}
+          className=" headercontainer"
+        >
           <Container className="imgcontainer">
             <img src={Logo1} alt="" />
           </Container>
+          {/* <div style={{ display: 'flex', justifyContent: 'space-between ' ,gap}}> */}
           <div className={sider}>
             <ul className="flex navList">
               <li className="navItem" onClick={() => scrollToRef(section1)}>
@@ -68,9 +76,6 @@ export default function Header() {
                 <a href="#Projects">Projects</a>
               </li>
 
-              <li className="navItem">
-                <a href="#"> Contact </a>
-              </li>
               {lessWidth && (
                 <AiFillCloseCircle
                   size={30}
@@ -81,6 +86,7 @@ export default function Header() {
               )}
             </ul>
           </div>
+          {/* </div> */}
           {lessWidth && (
             <IoIosMenu
               className="menuBar"
@@ -89,6 +95,17 @@ export default function Header() {
               onClick={sideHandler}
             />
           )}
+          <div
+            style={{
+              backgroundColor: 'brown',
+              padding: 7,
+              borderRadius: 5,
+              cursor: 'pointer',
+            }}
+            className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          >
+            <h3 style={{ color: 'white', margin: 0, padding: 0 }}>Contact</h3>
+          </div>
         </div>
       </header>
       {/* <div ref={section1Ref}>dslkdlksldk</div> */}

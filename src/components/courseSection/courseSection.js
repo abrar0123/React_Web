@@ -140,7 +140,7 @@ const CourseSection = () => {
         // ],
       },
       name: 'React JS',
-      exp: '2+ Years',
+      exp: '3+ Years',
       des: 'I have completed the advanced concepts of React JS includes, slso i multiple projects in react as you see below, Thanks ',
     },
     {
@@ -173,7 +173,7 @@ const CourseSection = () => {
         // ],
       },
       name: 'React Native',
-      exp: '1.5+ Years',
+      exp: '2+ Years',
       des: 'I have more than 1.5 years of industry experience of React Native Mobile Development with advanced Features, also i done multiple projects in this , Thanks ',
     },
     {
@@ -188,7 +188,7 @@ const CourseSection = () => {
         Automatic_Code_Splitting: [],
         File_Based_Routing: [],
       },
-      exp: '2+ Years',
+      exp: '3+ Years',
       des: 'Hi, i have completed my next js course and understand its conpects how it works , and also i done many projects in this , Thanks ',
     },
     {
@@ -223,7 +223,7 @@ const CourseSection = () => {
           'JSX to generate dynamic HTML ',
         ],
       },
-      exp: '2+ Years',
+      exp: '3+ Years',
       des: 'Hi, i have completed my html course 2 years ago , when i have in university and also i have coursera certificate regarding this,Also i done many projects regardig this , Thanks ',
     },
     {
@@ -238,14 +238,14 @@ const CourseSection = () => {
         Issues_Managment: [],
         CheckOut: [],
       },
-      exp: '2+ Years',
+      exp: '3+ Years',
       des: 'I am completely understand how git and github works internally and manage my code through github professional for version managment of projects. ',
     },
   ];
 
   return (
     <Card className="section">
-      <h1>My Skills Set</h1>
+      <h1 style={{ marginTop: 50 }}>My Skills Set</h1>
 
       <Coursedetails mycourses={mycourses} />
     </Card>
