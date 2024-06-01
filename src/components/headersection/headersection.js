@@ -8,7 +8,7 @@ import pic from '../../assets/Icons/removebgAbrar (2).png';
 
 // import Typical from "react-typical";
 
-export default function headersection() {
+export default function Headersection() {
   return (
     <section className="headsection">
       <div className="flex mainflexCntainer">

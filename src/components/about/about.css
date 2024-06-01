@@ -1,7 +1,8 @@
 .about {
-  padding: 20px 30px;
-  background: linear-gradient(to right, red, rgb(95, 6, 100));
+  padding: 150px 30px;
+  background: linear-gradient(to right, rgb(244, 130, 130), rgb(242, 127, 248));
   /* width: 100%; */
+  margin-bottom: 100;
   height: max-content;
 }
 .flex {
@@ -19,7 +20,9 @@
   margin-bottom: 40px;
 }
 .aboutflexContainer {
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
