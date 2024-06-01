@@ -29,7 +29,7 @@ export default function About() {
 
   return (
     <Card className="about">
-      <h1>About Me</h1>
+      <h1 style={{ marginTop: 50 }}>About Me</h1>
 
       <div className="flex aboutflexContainer">
         {/* 1 */}
