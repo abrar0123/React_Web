@@ -70,7 +70,7 @@ export default function About() {
       <div className="aboutflexContainer">
         <p
           style={{
-            color: 'white',
+            color: 'purple',
             fontFamily: 'cursive',
             fontSize: 25,
             fontWeight: 'bold',
@@ -82,17 +82,20 @@ export default function About() {
           style={{
             color: 'white',
             fontSize: 18,
-            width: '50%',
+            width: '60%',
             textAlign: 'justify',
             fontFamily: 'cursive',
           }}
         >
-          A strong conceptual thinker who has a keen interest in all things
-          related to the Internet.I have the ability and experience needed to
-          design and execute complex software projects for a diverse variety of
-          users. I am committed to having an impact on the future of any company
-          that I work for, and possess the enthusiasm and commitment to learn
-          and develop my career within a fast paced and growing business.
+          A highly Skilled & Experienced Software developer with more than 2 +
+          years of hands on industry experience in React Web and React Native
+          (android + ios) development. Proficient in designing, developing &
+          maintaining highly scalable Mobile and Web Apps as well as identify
+          and fix bugs with a proven track record of delivering robust and
+          highly scalable apps. Strong problem-solving skills coupled with a
+          commitment to continuous learning and staying updated with the latest
+          industry trends and best practices in software development to
+          continually improve app development.
         </p>
 
         {/* <Container className="profileContainer">
@@ -119,38 +122,9 @@ export default function About() {
           )}
         </div> */}
       </div>
-      <div
-        style={{
-          display: 'flex',
-          justifyContent: 'center',
-          padding: '20px 70px',
-          alignItems: 'center',
-        }}
-      >
-        <div>
-          <h2 style={{ color: 'white' }}>why i am doing this</h2>
-          <h3 style={{ color: 'white' }}>because i love beatiful things </h3>
-          <p style={{ width: '60%', color: 'white' }}>
-            I am an ambitious problem solver with a passion for online
-            businesses, and who would like to join a team of like-minded
-            developers. I try to be thorough and precise in everything I do, and
-            have a keen interest in technology, web, mobile applications and
-            user experience. I am continually evaluating and upgrading my skills
-            so that I stay at the cutting edge of web development.
-          </p>
-        </div>
-        <img
-          src={Web1}
-          style={{
-            width: '35%',
-            padding: 20,
-            height: '90%',
-            borderRadius: 10,
-          }}
-        />
-      </div>
+
       <div>
-        <h3 style={{ color: 'white', textAlign: 'center' }}>
+        <h3 style={{ color: 'purple', marginTop: 40, textAlign: 'center' }}>
           A Few things you need to know
         </h3>
         <div

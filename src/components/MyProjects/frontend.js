@@ -1,7 +1,7 @@
 import React from 'react';
 import './frontend.scss';
-import Travel1 from '../../assets/projectsImages/travel1.png';
-import Ecome1 from '../../assets/projectsImages/ecoomerce.png';
+import Ecome1 from '../../assets/projectsImages/cc1.png';
+import Travel1 from '../../assets/projectsImages/cc2.png';
 import weather from '../../assets/projectsImages/weather.png';
 import food1 from '../../assets/projectsImages/food1.png';
 import dummy from '../../assets/projectsImages/dummy.png';
@@ -70,7 +70,32 @@ const myProjects = [
 const Frontend = () => {
   return (
     <div className="frontend">
-      <h1 style={{ marginTop: 50 }}>My Latest Projects </h1>
+      {/* <h1>My Latest Projects </h1> */}
+      <div style={{}}>
+        <p
+          style={{
+            color: 'white',
+            paddingTop: 30,
+            fontWeight: 'bold',
+            fontSize: 40,
+            fontFamily: 'unset',
+          }}
+        >
+          My Portfolio
+        </p>
+      </div>
+      <p
+        style={{
+          color: 'white',
+          fontFamily: 'cursive',
+          fontSize: 30,
+          textAlign: 'center',
+          paddingTop: 40,
+          fontWeight: 'bold',
+        }}
+      >
+        My Latest Projects
+      </p>
       <ProjectsDetails myProjects={myProjects} />
     </div>
   );

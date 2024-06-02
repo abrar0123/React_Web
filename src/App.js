@@ -4,6 +4,7 @@ import Test from './sections/test/test';
 import HomePage from './pages/homePage';
 import AboutPage from './pages/aboutPage';
 import NotFoundPage from './pages/notFoundPage';
+import portfolioPg from './pages/PortfolioPg';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/" Component={HomePage} />
         <Route path="/home" Component={HomePage} />
         <Route path="/about" Component={AboutPage} />
+        <Route path="/portfolio" Component={portfolioPg} />
+
         <Route path="*" Component={NotFoundPage} />
 
         <Route />

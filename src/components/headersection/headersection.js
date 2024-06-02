@@ -5,6 +5,7 @@ import FlexColumn from '../UI/Card/FlexColumn';
 import Button from '../UI/button/Button';
 
 import pic from '../../assets/Icons/removebgAbrar (2).png';
+import { Link } from 'react-router-dom';
 
 // import Typical from "react-typical";
 
@@ -18,7 +19,7 @@ export default function Headersection() {
               color: 'white',
               marginBottom: 30,
               fontSize: 25,
-              fontFamily: 'sans-serif',
+              fontFamily: 'cursive',
             }}
           >
             Hello, I'm Abrar Hussain Software Engineer
@@ -30,7 +31,7 @@ export default function Headersection() {
               color: 'white',
               margin: 0,
               fontSize: 32,
-              fontFamily: 'sans-serif',
+              fontFamily: 'cursive',
             }}
           >
             I can create
@@ -64,26 +65,32 @@ export default function Headersection() {
           </p> */}
           {/* <p>Click to Visit my Latest Projects</p> */}
           <div style={{ marginTop: '50px' }}>
-            <Button
+            <Link
+              to={'/about'}
               style={{
                 backgroundColor: 'transparent',
                 border: '2px solid red',
                 marginRight: '20px',
                 padding: '10px 20px',
+                color: 'white',
+                textDecoration: 'none',
               }}
             >
               Read More
-            </Button>
-            <Button
+            </Link>
+            <Link
+              to={'/portfolio'}
               style={{
                 backgroundColor: 'red',
                 color: 'white',
                 padding: '10px 20px',
                 border: '2px solid red',
+                color: 'white',
+                textDecoration: 'none',
               }}
             >
               Latest Work
-            </Button>
+            </Link>
           </div>
         </FlexColumn>
         <Container className="imageContainer">
