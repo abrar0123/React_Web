@@ -84,8 +84,9 @@ const Header1 = () => {
           )}
           <div
             style={{
-              backgroundColor: 'brown',
+              // backgroundColor: 'brown',
               padding: 7,
+
               borderRadius: 5,
               cursor: 'pointer',
             }}

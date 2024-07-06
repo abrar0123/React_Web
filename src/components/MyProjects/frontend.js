@@ -1,6 +1,7 @@
 import React from 'react';
 import './frontend.scss';
 import Ecome1 from '../../assets/projectsImages/cc1.png';
+import Ecome2 from '../../assets/projectsImages/cc3.png';
 import Travel1 from '../../assets/projectsImages/cc2.png';
 import weather from '../../assets/projectsImages/weather.png';
 import food1 from '../../assets/projectsImages/food1.png';
@@ -9,6 +10,17 @@ import dummy from '../../assets/projectsImages/dummy.png';
 import ProjectsDetails from './projectsDetails';
 
 const myProjects = [
+  {
+    id: 12,
+    img: '',
+    pic: Ecome2,
+    link: 'https://new.naj.ae/',
+    name: 'NEJOUM ALJAZEERA ',
+    type: 'web app',
+    Technologies: ['HTML', 'JavaScript', 'Next JS'],
+    effort: 'Hard',
+    des: 'welcome to NEJOUM ALJAZEERA Auto Shipping web app that i use mostly use javaScript and next and also advanced concept of react like redux etc',
+  },
   {
     id: 1,
     img: '',
@@ -20,6 +32,7 @@ const myProjects = [
     effort: 'Medium',
     des: 'welcome to my ecommerce web app that i use mostly javaScript and react and also advanced concept of react like redux etc',
   },
+
   {
     id: 2,
     // img: require('"../../assets/projectsImages/travel1.png"'),

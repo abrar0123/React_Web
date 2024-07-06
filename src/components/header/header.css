@@ -1,6 +1,7 @@
 header {
-  background: linear-gradient(to right, rgb(167, 7, 7), rgb(42, 42, 244));
-  /* background-color: rgb(0, 0, 0); */
+  /* background: linear-gradient(to right, rgb(167, 7, 7), rgb(42, 42, 244)); */
+
+  background-color: #080424;
   padding: 5px 10px;
   position: fixed;
   width: 100%;
@@ -8,6 +9,7 @@ header {
   /* border-bottom: 5px solid red; */
   z-index: 1;
 }
+
 .headercontainer {
   justify-content: space-between;
   margin: 0 70px;

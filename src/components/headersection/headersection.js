@@ -35,7 +35,7 @@ export default function Headersection() {
             }}
           >
             I can create
-            <span style={{ color: 'darkblue' }}>
+            <span style={{ color: '#167bf1' }}>
               {' '}
               Mobile and Web Apps for you
             </span>
