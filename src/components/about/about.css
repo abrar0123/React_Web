@@ -1,7 +1,10 @@
 .about {
-  padding: 20px 30px;
-  background: linear-gradient(to right, red, rgb(95, 6, 100));
+  padding: 100px 30px;
+  /* background: linear-gradient(to right, rgb(244, 130, 130), rgb(242, 127, 248)); */
+  background-color: #101c2c;
   /* width: 100%; */
+
+  margin-bottom: 100;
   height: max-content;
 }
 .flex {
@@ -19,9 +22,12 @@
   margin-bottom: 40px;
 }
 .aboutflexContainer {
-  flex-flow: row wrap;
+  /* flex-flow: row wrap; */
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 
 .profileContainer {
@@ -149,5 +155,43 @@
   }
   .btncontainer {
     justify-content: center;
+  }
+}
+
+/* infinite logo scroll  */
+
+.carousel {
+  overflow: hidden;
+  /* width: 100%; */
+  margin: 20px;
+  margin-right: 0;
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 15s linear infinite;
+}
+.carousel-track:hover {
+  animation-play-state: paused;
+}
+
+.carousel-item {
+  flex: 0 0 auto;
+  width: 150px; /* Adjust the width as needed */
+  /* background-color: red; */
+  padding: 10px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

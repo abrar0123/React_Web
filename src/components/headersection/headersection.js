@@ -3,87 +3,71 @@ import './headersec.css';
 import Container from '../UI/Card/Container';
 import FlexColumn from '../UI/Card/FlexColumn';
 import Button from '../UI/button/Button';
+import record from '../../assets/Icons/record.png';
 
 import pic from '../../assets/Icons/removebgAbrar (2).png';
+import { Link } from 'react-router-dom';
+import colors from '../../constants/colors';
+import { Text } from '../UI/Text';
 
 // import Typical from "react-typical";
 
-export default function headersection() {
+export default function Headersection() {
   return (
     <section className="headsection">
       <div className="flex mainflexCntainer">
         <FlexColumn className="secondarysec">
-          <h2
+          <Text color={colors.cyanBlue} text="Hi, my name is" />
+          <Text ml={15} mt={15} font={45} bold text="Abrar Hussain" />
+          <img
+            src={record}
             style={{
-              color: 'white',
-              marginBottom: 30,
-              fontSize: 25,
-              fontFamily: 'sans-serif',
+              width: 17,
+              height: 17,
+              marginTop: 20,
+              // marginLeft: 6,
+              marginBottom: 15,
             }}
-          >
-            Hello, I'm Abrar Hussain Software Engineer
-          </h2>
-          {/* <h2 style={{ color: 'blue', margin: '30 0' }}>SOFTWARE ENGINEER</h2> */}
+          />
+          <Text ml={10} mt={20} font={22} mb={15} text="Full Stack Developer" />
+          <Text
+            ml={10}
+            mt={21}
+            font={16}
+            mb={15}
+            color={colors.grey}
+            style={{ width: '50%' }}
+            text="Experienced Software Developer specializing in crafting Mobile and Web applications.
+            Proficient in JavaScript , React JS , React Native and Next to deliver customized solutions. Strong problem-solving skills with quickly fixes bugs and and deliver quality product "
+          />
 
-          <h2
-            style={{
-              color: 'white',
-              margin: 0,
-              fontSize: 32,
-              fontFamily: 'sans-serif',
-            }}
-          >
-            I can create
-            <span style={{ color: 'darkblue' }}>
-              {' '}
-              Mobile and Web Apps for you
-            </span>
-          </h2>
-          {/* npm i react-typical@latest --legacy-peer-depsatest --legacy-peer-deps */}
-          {/* <h2 style={{ fontSize: "30px", color: "rgb(188, 204, 13)" }}>
-            <Typical
-              // style={{ fontSize: "30px" }}
-              loop={Infinity}
-              steps={[
-                "Front End Developer",
-                2000,
-                "React Js Developer ",
-                1000,
-                "React Native Developer",
-                1000,
-              ]}
-            />
-          </h2> */}
-          {/* <p>
-            Hi, I'm Abrar-Hussain, I am professional React developer and Mobile
-            Developer (React Native),
-          </p>
-          <p>
-            My Qualification is BS (hons) in Software Engineering from the
-            university of Gujrat.
-          </p> */}
-          {/* <p>Click to Visit my Latest Projects</p> */}
           <div style={{ marginTop: '50px' }}>
-            <Button
+            <Link
+              to={'/about'}
               style={{
                 backgroundColor: 'transparent',
                 border: '2px solid red',
                 marginRight: '20px',
                 padding: '10px 20px',
+                color: 'white',
+                textDecoration: 'none',
               }}
             >
               Read More
-            </Button>
-            <Button
+            </Link>
+            <Link
+              to={'/portfolio'}
               style={{
                 backgroundColor: 'red',
                 color: 'white',
                 padding: '10px 20px',
                 border: '2px solid red',
+                color: 'white',
+                textDecoration: 'none',
               }}
             >
               Latest Work
-            </Button>
+            </Link>
           </div>
         </FlexColumn>
         <Container className="imageContainer">
