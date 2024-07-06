@@ -60,7 +60,7 @@ const Header1 = () => {
               </li>
 
               <li className="navItem">
-                <Link to="/Projects">Projects</Link>
+                <Link to="/portfolio">Projects</Link>
               </li>
 
               {lessWidth && (

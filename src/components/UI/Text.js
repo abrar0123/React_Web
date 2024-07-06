@@ -5,39 +5,49 @@ export const Text = (props) => {
   const {
     font = 18,
     color = colors.white,
+    style,
     mt = 0,
-    mb = 10,
+    mb = 0,
     ml = 0,
     mr = 0,
     m = 0,
-
     pt = 0,
-    pb = 10,
+    pb = 0,
     pl = 0,
     pr = 0,
     p = 0,
     bold = false,
+    center = false,
   } = props;
   return (
-    <p
+    <div
       style={{
-        fontSize: font,
-        color: color,
+        ...style,
+        margin: m,
+        padding: p,
         marginTop: mt,
         marginBlock: mb,
         marginLeft: ml,
         marginRight: mr,
         paddingTop: pt,
         paddingBlock: pb,
-        lineHeight: 1.4,
         paddingLeft: pl,
         paddingRight: pr,
-        margin: m,
-        padding: p,
-        fontWeight: bold && 'bold',
       }}
     >
-      {props.text}
-    </p>
+      <p
+        style={{
+          fontSize: font,
+          color: color,
+          margin: 0,
+          padding: 0,
+          lineHeight: 1.4,
+          fontWeight: bold && 'bold',
+          textAlign: center && 'center',
+        }}
+      >
+        {props.text}
+      </p>
+    </div>
   );
 };

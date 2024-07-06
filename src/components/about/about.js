@@ -14,6 +14,15 @@ import monitor from '../../assets/Icons/monitor.png';
 import phone from '../../assets/Icons/phone.png';
 import bullhorn from '../../assets/Icons/bullhorn.png';
 import user from '../../assets/Icons/user.png';
+import { Text } from '../UI/Text';
+import colors from '../../constants/colors';
+
+import f1 from '../../assets/Icons1/js.png';
+import f2 from '../../assets/Icons1/css-3.png';
+import f3 from '../../assets/Icons1/react.png';
+import f4 from '../../assets/Icons1/bootstrap.png';
+import f5 from '../../assets/Icons1/android.png';
+import f6 from '../../assets/Icons1/apple.png';
 
 const items = [
   { id: 1, name: '+923097914975', title: 'Contact' },
@@ -31,7 +40,7 @@ const data = [
     id: 1,
     name: 'Mobile Development',
     title:
-      'First, I started Android App Development using Java and Kotlin. But now I shifted my interest towards Hybrid App Development using React Native and Flutter',
+      'With 2+ years of extensive experience as Mobile Application Developement using React Native with includng social media apps,ai news apps and ecommerce apps etc',
     img: phone,
   },
   {
@@ -39,7 +48,7 @@ const data = [
     name: 'Web Development',
     img: monitor,
     title:
-      'My Web Development I use technologies, React JS,Next JS CSS3, HTML5,Tailwind, Bootstrap Styled Components. I create stunning and responsive design.',
+      'Most Skilled web application development with 3+ years of experience using React JS and Next JS with includng Rent site social media site, client dashboard and ecommerce apps etc',
   },
   {
     id: 3,
@@ -50,7 +59,7 @@ const data = [
   },
   {
     id: 4,
-    name: 'Awesom Personality',
+    name: 'Awesome Personality',
     img: user,
     title:
       'For me knowledge is of utmost importance today. Knowledge gives me the ability to survive and tackle different kinds of situations. It also makes me more rational and pragmatic. Thus, I tend to understand things quicker than others.',
@@ -62,78 +71,80 @@ export default function About() {
   const myIndex = (id) => {
     setIndex(id);
   };
+  const logos = [
+    f1,
+    f2,
+    f3,
+    f4,
+    f5,
+    f6,
+
+    // Add more logos as needed
+  ];
 
   return (
     <Card className="about">
       {/* <h1 style={{ marginTop: 70, fontSize: 22 }}>About Me</h1> */}
 
       <div className="aboutflexContainer">
-        <p
-          style={{
-            color: 'purple',
-            fontFamily: 'cursive',
-            fontSize: 25,
-            fontWeight: 'bold',
-          }}
-        >
-          A little information about me
-        </p>
-        <p
-          style={{
-            color: 'white',
-            fontSize: 18,
-            width: '60%',
-            textAlign: 'justify',
-            fontFamily: 'cursive',
-          }}
-        >
-          A highly Skilled & Experienced Software developer with more than 2 +
-          years of hands on industry experience in React Web and React Native
-          (android + ios) development. Proficient in designing, developing &
-          maintaining highly scalable Mobile and Web Apps as well as identify
-          and fix bugs with a proven track record of delivering robust and
-          highly scalable apps. Strong problem-solving skills coupled with a
-          commitment to continuous learning and staying updated with the latest
+        <Text
+          color={colors.cyanBlue}
+          font={25}
+          bold
+          mb={20}
+          mt={20}
+          text="A little information about me"
+        />
+        <Text
+          style={{ width: '60%' }}
+          color={colors.grey}
+          text="Experienced Software developer with 3+
+          years of hands on industry experience as Full Stack Development. 
+          Proficient in designing, developing &
+          maintaining highly scalable Mobile and Web applications. Strong problem-solving skills coupled with a commitment to continuous learning and staying updated with the latest
           industry trends and best practices in software development to
-          continually improve app development.
-        </p>
-
-        {/* <Container className="profileContainer">
-          <img
-            src={Snap1}
-            style={{
-              width: '85%',
-              padding: 20,
-              height: '90%',
-              borderRadius: 10,
-            }}
-          />
-        </Container> */}
-        {/* <div className="btncontainer">
-          <AboutDetails myIndex={myIndex} />
-          {Index === 1 ? (
-            <About_edu />
-          ) : Index === 2 ? (
-            <About_exp />
-          ) : Index === 3 ? (
-            <About_courses />
-          ) : (
-            <About_Contact items={items} />
-          )}
-        </div> */}
+          continually improve app development. "
+        />
+        <Text
+          color={colors.cyanBlue}
+          font={25}
+          bold
+          mb={20}
+          mt={30}
+          text="A Few things you need to know"
+        />
       </div>
-
+      {/* p11 */}
+      <div className="carousel">
+        <div className="carousel-track">
+          {logos.map((logo, index) => (
+            <div key={index} className="carousel-item">
+              <img
+                style={{ width: 70, height: 70 }}
+                src={logo}
+                alt={`Logo ${index + 1}`}
+              />
+            </div>
+          ))}
+          {logos.map((logo, index) => (
+            <div key={index + logos.length} className="carousel-item">
+              <img
+                style={{ width: 70, height: 70 }}
+                src={logo}
+                alt={`Logo ${index + 1}`}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
       <div>
-        <h3 style={{ color: 'purple', marginTop: 40, textAlign: 'center' }}>
-          A Few things you need to know
-        </h3>
         <div
           style={{
             display: 'flex',
             flexDirection: 'row',
             flexWrap: 'wrap',
             alignItems: 'center',
-            gap: 35,
+            gap: 15,
             padding: '0px 60px',
             justifyContent: 'space-between',
           }}
@@ -143,9 +154,12 @@ export default function About() {
               <img
                 src={item.img}
                 style={{
-                  width: 60,
+                  width: 40,
                   padding: 20,
-                  height: 60,
+                  height: 40,
+                  marginTop: 20,
+                  marginRight: 15,
+                  backgroundColor: colors.cyanBlue10,
                   borderRadius: 10,
                 }}
               />
@@ -168,9 +182,8 @@ export default function About() {
                 >
                   {item.name}
                 </p>
-                <p style={{ color: 'white', textAlign: 'justify' }}>
-                  {item.title}
-                </p>
+
+                <Text font={15} color={colors.grey} text={item.title} />
               </div>
             </div>
           ))}

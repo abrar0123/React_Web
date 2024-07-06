@@ -8,6 +8,8 @@ import food1 from '../../assets/projectsImages/food1.png';
 import dummy from '../../assets/projectsImages/dummy.png';
 
 import ProjectsDetails from './projectsDetails';
+import { Text } from '../UI/Text';
+import colors from '../../constants/colors';
 
 const myProjects = [
   {
@@ -94,21 +96,20 @@ const Frontend = () => {
             fontFamily: 'unset',
           }}
         >
-          My Portfolio
+          {/* My Portfolio */}
         </p>
       </div>
-      <p
-        style={{
-          color: 'white',
-          fontFamily: 'cursive',
-          fontSize: 30,
-          textAlign: 'center',
-          paddingTop: 40,
-          fontWeight: 'bold',
-        }}
-      >
-        My Latest Projects
-      </p>
+      <Text
+        ml={15}
+        mt={15}
+        mb={40}
+        font={35}
+        bold
+        color={colors.cyanBlue}
+        center
+        text="My Latest Projects"
+      />
+
       <ProjectsDetails myProjects={myProjects} />
     </div>
   );
