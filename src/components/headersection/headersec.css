@@ -1,6 +1,6 @@
 .headsection {
-  height: 80vh;
-  padding: 85px 30px;
+  height: auto;
+  padding: 95px 30px;
   /* background: linear-gradient(to right, rgb(167, 7, 7), rgb(42, 42, 244)); */
   /* background: linear-gradient(to right, rgb(97, 120, 249), rgb(239, 170, 237)); */
   background-color: #101c2c;
@@ -14,7 +14,6 @@
   gap: 20px;
   align-items: center;
   /* width: 80%; */
-  /* background-color: aliceblue; */
 }
 
 .flex {
@@ -26,6 +25,7 @@
   justify-content: space-between;
   color: white;
   width: 50%;
+  /* background-color: aliceblue; */
 }
 .secondarysec h1 {
   text-transform: uppercase;

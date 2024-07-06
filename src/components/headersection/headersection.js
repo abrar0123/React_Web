@@ -18,7 +18,7 @@ export default function Headersection() {
       <div className="flex mainflexCntainer">
         <FlexColumn className="secondarysec">
           <Text color={colors.cyanBlue} text="Hi, my name is" />
-          <Text ml={15} mt={15} font={45} bold text="Abrar Hussain" />
+          <Text ml={15} mt={18} font={45} bold text="Abrar Hussain" />
           <img
             src={record}
             style={{
@@ -36,7 +36,6 @@ export default function Headersection() {
             font={16}
             mb={15}
             color={colors.grey}
-            style={{ width: '50%' }}
             text="Experienced Software Developer specializing in crafting Mobile and Web applications.
             Proficient in JavaScript , React JS , React Native and Next to deliver customized solutions. Strong problem-solving skills with quickly fixes bugs and and deliver quality product "
           />
