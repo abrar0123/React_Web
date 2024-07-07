@@ -5,19 +5,14 @@ import AboutDetails from './aboutDetails';
 import Profile from '../../assets/images/uu.jpg';
 import Snap1 from '../../assets/images/Snapchat1.jpg';
 import Container from '../UI/Card/Container';
-import About_edu from './about_edu';
-import About_exp from './about_exp';
-import About_courses from './about_courses';
-import About_Contact from './about_Contact';
-import Web1 from '../../assets/images/web.png';
-import monitor from '../../assets/Icons/monitor.png';
-import phone from '../../assets/Icons/phone.png';
-import bullhorn from '../../assets/Icons/bullhorn.png';
-import user from '../../assets/Icons/user.png';
+
 import { Text } from '../UI/Text';
 import colors from '../../constants/colors';
+import Button from '../UI/button/Button';
 
 import { ScrolledList } from './ScrolledList';
+import { ServicesCmp } from './ServicesCmp';
+import PrimaryButton from '../UI/button/PrimaryButton';
 
 const items = [
   { id: 1, name: '+923097914975', title: 'Contact' },
@@ -30,43 +25,44 @@ const items = [
   { id: 3, name: 'https://github.com/abrar0123', title: 'Github' },
 ];
 
-const data = [
-  {
-    id: 1,
-    name: 'Mobile Development',
-    title:
-      'With 2+ years of extensive experience as Mobile Application Developement using React Native with includng social media apps,ai news apps and ecommerce apps etc',
-    img: phone,
-  },
-  {
-    id: 2,
-    name: 'Web Development',
-    img: monitor,
-    title:
-      'Most Skilled web application development with 3+ years of experience using React JS and Next JS with includng Rent site social media site, client dashboard and ecommerce apps etc',
-  },
-  {
-    id: 3,
-    name: 'Marketing Strategy',
-    img: bullhorn,
-    title:
-      'I follow marketing strategies like Use of Social Media, Blogging, Understanding Search Engine Optimization, Leverage Influencers, use Linkedin the right way.',
-  },
-  {
-    id: 4,
-    name: 'Awesome Personality',
-    img: user,
-    title:
-      'For me knowledge is of utmost importance today. Knowledge gives me the ability to survive and tackle different kinds of situations. It also makes me more rational and pragmatic. Thus, I tend to understand things quicker than others.',
-  },
-];
-
 export default function About() {
   const [Index, setIndex] = useState(1);
 
   const myIndex = (id) => {
     setIndex(id);
   };
+
+  const courses = [
+    { id: 1, name: 'Front End Devlopment', link: '' },
+    { id: 2, name: 'Mobile  Devlopment', link: '' },
+    { id: 3, name: 'JavaScript Devlopment', link: '' },
+    { id: 4, name: 'Github  ', link: '' },
+  ];
+
+  const experience = [
+    {
+      id: 1,
+      name: 'Gh & Vb Technologies ',
+      doc: 'Develop multiple mobile and webs app projects with add user friendly and performant features and functionalities',
+      link: '',
+      exp: 'sep 2022 - march 2023',
+    },
+    {
+      id: 2,
+      name: 'Codek Technologies',
+      doc: 'Develops a best real world multiple types of projects includes user facing features of international Clients. Stayed up-to-date with the latest mobile development trends and best practices to continually improve Mobile app development processes. ',
+      link: '',
+      exp: 'march 2023 - oct 2023',
+    },
+    {
+      id: 3,
+      name: 'Devgate Technologies',
+      doc: 'Develops a best real world multiple types of projects includes user facing features of international Clients. Collaborates with cross-functional teams to design, develop, and deploy user-friendly and performant mobile applications of Android and iOS platforms.',
+      link: '',
+      exp: 'oct 2023 - present',
+    },
+    // { id: 4, name: 'Codek Technologies  ', link: '' },
+  ];
 
   return (
     <Card className="about">
@@ -82,7 +78,7 @@ export default function About() {
           text="A little information about me"
         />
         <Text
-          style={{ width: '60%' }}
+          style={{ width: '70%' }}
           color={colors.grey}
           text="Experienced Software developer with 3+
           years of hands on industry experience as Full Stack Development. 
@@ -97,62 +93,24 @@ export default function About() {
           bold
           mb={20}
           mt={30}
-          text="A Few things you need to know"
+          mr={150}
+          text="A Few things you need to know "
         />
       </div>
-      {/* p11 */}
-      <ScrolledList />
-      <div>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'row',
-            flexWrap: 'wrap',
-            alignItems: 'center',
-            gap: 15,
-            padding: '0px 60px',
-            justifyContent: 'space-between',
-          }}
-        >
-          {data.map((item) => (
-            <div style={{ display: 'flex', alignItems: 'start' }}>
-              <img
-                src={item.img}
-                style={{
-                  width: 40,
-                  padding: 20,
-                  height: 40,
-                  marginTop: 20,
-                  marginRight: 15,
-                  backgroundColor: colors.cyanBlue10,
-                  borderRadius: 10,
-                }}
-              />
-              <div
-                style={{
-                  display: 'flex',
-                  width: 400,
-                  // backgroundColor: 'red',
-                  flexDirection: 'column',
-                  // alignItems: 'center',
-                  // justifyContent: 'center',
-                }}
-              >
-                <p
-                  style={{
-                    color: 'white',
-                    fontWeight: 'bold',
-                    textAlign: 'justify',
-                  }}
-                >
-                  {item.name}
-                </p>
-
-                <Text font={15} color={colors.grey} text={item.title} />
-              </div>
+      {/* <ScrolledList /> */}
+      {/* <ServicesCmp /> */}
+      <div className="ExpCardParent">
+        {experience.map((item) => {
+          return (
+            <div className="ExpCard">
+              <div className="dot" />
+              <Text text={item.name} bold color={colors.cyanBlue10} />
+              <Text text={item.exp} ml={15} font={16} />
+              <Text color={colors.grey} text={item.doc} />
+              <PrimaryButton>View Certificates</PrimaryButton>
             </div>
-          ))}
-        </div>
+          );
+        })}
       </div>
     </Card>
   );

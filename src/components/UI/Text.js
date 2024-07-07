@@ -22,7 +22,7 @@ export const Text = (props) => {
   return (
     <div
       style={{
-        // ...style,
+        ...style,
         // margin: m,
         // padding: p,
         marginTop: mt,
