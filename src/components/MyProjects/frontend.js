@@ -20,7 +20,7 @@ const Frontend = () => {
       {/* <h1>My Latest Projects </h1> */}
       <Text
         ml={15}
-        mt={70}
+        // mt={100}
         mb={30}
         font={60}
         bold

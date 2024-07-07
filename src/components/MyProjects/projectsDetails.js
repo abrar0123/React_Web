@@ -66,13 +66,21 @@ const ProjectsDetails = ({ myProjects, techs }) => {
                     {item.Technologies[2]}
                   </div>
                 </Container>
-                <div style={{ marginTop: '20px', padding: '0px 10px' }}>
+                <div style={{ marginTop: '10px', padding: '0px 10px' }}>
                   <hr />
                 </div>
-                <p style={{ padding: '0px 10px' }}>{item.des}</p>
+                <p
+                  style={{
+                    padding: '0px 10px',
+                    fontSize: 15,
+                    color: colors.grey,
+                  }}
+                >
+                  {item.des}
+                </p>
                 {/* p1 */}
                 <div className="btnstyle">
-                  <Button style={{ width: '100%', padding: '15px' }}>
+                  <Button style={{ width: '100%', padding: '10px' }}>
                     <a href={item.link} target="_blank">
                       Visit Live Project
                     </a>

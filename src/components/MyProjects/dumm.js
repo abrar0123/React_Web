@@ -93,9 +93,9 @@ export const myProjects = [
     name: 'Nfs Curier',
     tech: ['native', 'css', 'all'],
     type: 'mobile development',
-    Technologies: ['React Native', 'JavaScript'],
+    Technologies: ['React Native', 'Google Maps', 'JavaScript'],
     effort: 'Easy',
-    des: 'welcome to my Foood Ordering web app that i build project by using mostly javaScript and advanced concept of react.',
+    des: 'App provides curier services that user sending, tracking, and receiving parcels and place order to  nearest rider will pick order and deliver with multiple processes with gogle maps services.',
   },
   {
     id: 8,
@@ -117,8 +117,8 @@ export const myProjects = [
     name: 'StreetzTalk App',
     tech: ['native', 'css', 'all'],
     type: 'mobile development',
-    Technologies: ['React Native', 'JavaScript'],
+    Technologies: ['React Native', 'Mobile App', 'JavaScript'],
     effort: 'Easy',
-    des: 'welcome to my Foood Ordering web app that i build project by using mostly javaScript and advanced concept of react.',
+    des: 'This is social media like facebook type app that aims to create a dynamic and interactive platform for users to connect, share, and engage with each other seamlessly.',
   },
 ];
