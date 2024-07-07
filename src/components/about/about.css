@@ -195,3 +195,34 @@
     transform: translateX(-50%);
   }
 }
+.ExpCardParent {
+  display: flex;
+  flex-direction: column;
+  /* margin: 0 auto; */
+  /* background-color: #166fe4; */
+  /* justify-content: center; */
+  align-items: center;
+  /* gap: 30px; */
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  padding: 10px 80px;
+}
+.dot {
+  width: 22px;
+  height: 22px;
+  background-color: #166fe4;
+  position: relative;
+  right: 37px;
+  border-radius: 50px;
+  top: 88px;
+}
+
+.ExpCard {
+  background-color: #101c2c;
+  width: 350px;
+  border-left: 3px solid #166fe4;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

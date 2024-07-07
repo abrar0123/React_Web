@@ -60,7 +60,7 @@ const Header1 = () => {
               </li>
 
               <li className="navItem">
-                <Link to="/portfolio">Projects</Link>
+                <Link to="/projects">Services</Link>
               </li>
 
               {lessWidth && (
@@ -82,18 +82,20 @@ const Header1 = () => {
               onClick={sideHandler}
             />
           )}
-          <div
-            style={{
-              // backgroundColor: 'brown',
-              padding: 7,
+          {!lessWidth && (
+            <div
+              style={{
+                // backgroundColor: 'brown',
+                padding: 7,
 
-              borderRadius: 5,
-              cursor: 'pointer',
-            }}
-            className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-          >
-            <h3 style={{ color: 'white', margin: 0, padding: 0 }}>Contact</h3>
-          </div>
+                borderRadius: 5,
+                cursor: 'pointer',
+              }}
+              className="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+              <h3 style={{ color: 'white', margin: 0, padding: 0 }}>Contact</h3>
+            </div>
+          )}
         </div>
       </header>
     </>
