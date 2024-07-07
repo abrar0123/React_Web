@@ -17,12 +17,7 @@ import user from '../../assets/Icons/user.png';
 import { Text } from '../UI/Text';
 import colors from '../../constants/colors';
 
-import f1 from '../../assets/Icons1/js.png';
-import f2 from '../../assets/Icons1/css-3.png';
-import f3 from '../../assets/Icons1/react.png';
-import f4 from '../../assets/Icons1/bootstrap.png';
-import f5 from '../../assets/Icons1/android.png';
-import f6 from '../../assets/Icons1/apple.png';
+import { ScrolledList } from './ScrolledList';
 
 const items = [
   { id: 1, name: '+923097914975', title: 'Contact' },
@@ -65,22 +60,13 @@ const data = [
       'For me knowledge is of utmost importance today. Knowledge gives me the ability to survive and tackle different kinds of situations. It also makes me more rational and pragmatic. Thus, I tend to understand things quicker than others.',
   },
 ];
+
 export default function About() {
   const [Index, setIndex] = useState(1);
 
   const myIndex = (id) => {
     setIndex(id);
   };
-  const logos = [
-    f1,
-    f2,
-    f3,
-    f4,
-    f5,
-    f6,
-
-    // Add more logos as needed
-  ];
 
   return (
     <Card className="about">
@@ -115,28 +101,7 @@ export default function About() {
         />
       </div>
       {/* p11 */}
-      <div className="carousel">
-        <div className="carousel-track">
-          {logos.map((logo, index) => (
-            <div key={index} className="carousel-item">
-              <img
-                style={{ width: 70, height: 70 }}
-                src={logo}
-                alt={`Logo ${index + 1}`}
-              />
-            </div>
-          ))}
-          {logos.map((logo, index) => (
-            <div key={index + logos.length} className="carousel-item">
-              <img
-                style={{ width: 70, height: 70 }}
-                src={logo}
-                alt={`Logo ${index + 1}`}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+      <ScrolledList />
       <div>
         <div
           style={{

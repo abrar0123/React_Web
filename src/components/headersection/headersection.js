@@ -57,10 +57,11 @@ export default function Headersection() {
             <Link
               to={'/portfolio'}
               style={{
-                backgroundColor: 'red',
+                backgroundColor: colors.cyanBlue,
                 color: 'white',
                 padding: '10px 20px',
                 border: '2px solid red',
+                borderColor: colors.cyanBlue10,
                 color: 'white',
                 textDecoration: 'none',
               }}
