@@ -1,5 +1,7 @@
 import Ecome1 from '../../assets/projectsImages/cc1.png';
 import Ecome2 from '../../assets/projectsImages/cc3.png';
+import Ecome3 from '../../assets/projectsImages/image.png';
+
 import Travel1 from '../../assets/projectsImages/cc2.png';
 import weather from '../../assets/projectsImages/weather.png';
 import food1 from '../../assets/projectsImages/food1.png';
@@ -12,14 +14,26 @@ export const myProjects = [
   {
     id: 12,
     img: '',
-    tech: ['react', 'all', 'tailwind', 'bootstrap', 'next'],
+    tech: ['react', 'all', 'tailwind', 'bootstrap', 'next','stack'],
     pic: Ecome2,
     link: 'https://new.naj.ae/',
     name: 'NEJOUM ALJAZEERA ',
     type: 'web app',
-    Technologies: ['HTML', 'JavaScript', 'Next JS'],
+    Technologies: ['Next.jS','JavaScript','Node.js'],
     effort: 'Hard',
     des: 'welcome to NEJOUM ALJAZEERA Auto Shipping web app that i use mostly use javaScript and next and also advanced concept of react like redux etc',
+  },
+  {
+    id: 12,
+    img: '',
+    tech: ['react', 'all', 'tailwind', 'bootstrap', 'next','stack'],
+    pic: Ecome3,
+    link: 'https://s2-cities-ec-master-mz.vercel.app/',
+    name: 'Safe Sound Cities ',
+    type: 'web app',
+    Technologies: ['React.js','JavaScript','Node.js'],
+    effort: 'Hard',
+    des: 'welcome to Safe Sound Educational web app that that provides educational content to the users',
   },
   {
     id: 1,
@@ -29,7 +43,7 @@ export const myProjects = [
     link: 'https://sephora-ecommerce-store.netlify.app/',
     name: 'Ecommerce store ',
     type: 'web app',
-    Technologies: ['HTML', 'CSS', 'JavaScript', 'React JS'],
+    Technologies: ['JavaScript', 'React.js','Supabase'],
     effort: 'Medium',
     des: 'welcome to my ecommerce web app that i use mostly javaScript and react and also advanced concept of react like redux etc',
   },

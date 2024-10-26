@@ -40,26 +40,28 @@ export default function About() {
   ];
 
   const experience = [
-    {
-      id: 1,
-      name: 'Gh & Vb Technologies ',
-      doc: 'Develop multiple mobile and webs app projects with add user friendly and performant features and functionalities',
-      link: '',
-      exp: 'sep 2022 - march 2023',
-    },
+    // {
+    //   id: 1,
+    //   name: 'Gh & Vb Technologies ',
+    //   doc: 'Develop multiple mobile and webs app projects with add user friendly and performant features and functionalities',
+    //   link: '',
+    //   exp: 'sep 2022 - march 2023',
+    // },
     {
       id: 2,
-      name: 'Codek Technologies',
-      doc: 'Develops a best real world multiple types of projects includes user facing features of international Clients. Stayed up-to-date with the latest mobile development trends and best practices to continually improve Mobile app development processes. ',
+      name: 'Upwork (Full Stack Development)',
+      doc: 'Full Stack Development || React Native || React.js || Next.js || Android || IOS || Web Apps || Node.js || Express || MongoDB || SQL || PostgreSql || Firebase || Supabase || Stripe || Mobile Apps || Backend || Frontend ' ,
       link: '',
-      exp: 'march 2023 - oct 2023',
+      role:'Mobile Developer & Full Stack Development',
+      exp: 'Oct 2023 - present',
     },
     {
       id: 3,
       name: 'Devgate Technologies',
-      doc: 'Develops a best real world multiple types of projects includes user facing features of international Clients. Collaborates with cross-functional teams to design, develop, and deploy user-friendly and performant mobile applications of Android and iOS platforms.',
+      doc: 'Develops a Customized Solutions for Clients & Provides Services for Company. Collaborates with cross-functional teams to deliver most performant mobile applications of Android and iOS platforms.',
       link: '',
-      exp: 'oct 2023 - present',
+      role:'React Native Mobile Developer',
+      exp: 'Oct 2022 - present ( React Native Mobile Developer)',
     },
     // { id: 4, name: 'Codek Technologies  ', link: '' },
   ];
@@ -77,16 +79,17 @@ export default function About() {
           mt={20}
           text="A little information about me"
         />
+        
         <Text
-          style={{ width: '70%' }}
+          style={{ width: '60%' }}
           color={colors.grey}
-          text="Experienced Software developer with 3+
+          text="Experienced Full Stack developer & Mobile Development having 4+
           years of hands on industry experience as Full Stack Development. 
           Proficient in designing, developing &
-          maintaining highly scalable Mobile and Web applications. Strong problem-solving skills coupled with a commitment to continuous learning and staying updated with the latest
-          industry trends and best practices in software development to
-          continually improve app development. "
+          maintaining highly scalable and customized solutions of Mobile and Web applications."
         />
+      {/* <ScrolledList /> */}
+
         <Text
           color={colors.cyanBlue}
           font={25}
@@ -97,16 +100,15 @@ export default function About() {
           text="A Few things you need to know "
         />
       </div>
-      {/* <ScrolledList /> */}
       {/* <ServicesCmp /> */}
-      <div className="ExpCardParent">
+      <div className="ExpCardParent" >
         {experience.map((item) => {
           return (
             <div className="ExpCard">
               <div className="dot" />
               <Text text={item.name} bold color={colors.cyanBlue10} />
-              <Text text={item.exp} ml={15} font={16} />
-              <Text color={colors.grey} text={item.doc} />
+              <Text text={item.exp} mt={20} mb={20} ml={15} font={16} />
+              <Text color={colors.cyanBlue} font={14} text={item.doc}  />
               <PrimaryButton>View Certificates</PrimaryButton>
             </div>
           );

@@ -27,10 +27,10 @@ const ProjectsDetails = ({ myProjects, techs }) => {
   console.log('first :', first);
   return (
     <>
-      <div className="flex nn">
+      <div className="flex nn ">
         {techs.map((item, i) => {
           return (
-            <div className="smallTab" onClick={() => setfirst(item)}>
+            <div className="smallTab navItem1" onClick={() => setfirst(item)}>
               <Text
                 text={item.name}
                 color={first.id === i ? colors.cyanBlue : colors.white}

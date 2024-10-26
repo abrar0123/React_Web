@@ -37,6 +37,7 @@
 .imageContainer {
   /* width: 300px; */
   height: 400px;
+  margin-top: 40px;
 }
 .imageContainer img {
   width: 100%;

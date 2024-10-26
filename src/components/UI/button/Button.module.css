@@ -1,5 +1,5 @@
 .buttonstyle {
-  background-color: rgb(2, 7, 48);
+  background-color: rgb(91, 6, 103);
   font-size: 16px;
   border: none;
   color: white;
@@ -33,6 +33,7 @@
   font-weight: bold;
   padding: 5px 10px;
   box-shadow: 1px 1px 10px rgb(18, 17, 17, 0.3);
+  margin-top: 20px;
 }
 
 .primarybuttonstyle:not(:last-child) {

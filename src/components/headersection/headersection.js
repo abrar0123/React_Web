@@ -5,7 +5,7 @@ import FlexColumn from '../UI/Card/FlexColumn';
 import Button from '../UI/button/Button';
 import record from '../../assets/Icons/record.png';
 
-import pic from '../../assets/Icons/removebgAbrar (2).png';
+import pic from '../../assets/images/lap.gif';
 import { Link } from 'react-router-dom';
 import colors from '../../constants/colors';
 import { Text } from '../UI/Text';

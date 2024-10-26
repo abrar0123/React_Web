@@ -2,11 +2,11 @@ header {
   /* background: linear-gradient(to right, rgb(167, 7, 7), rgb(42, 42, 244)); */
 
   background-color: #080424;
-  padding: 5px 10px;
+  padding: 0px 10px;
   position: fixed;
   width: 100%;
   box-sizing: border-box;
-  /* border-bottom: 5px solid red; */
+  border-bottom: 1px solid rgb(209, 204, 204);
   z-index: 1;
 }
 
@@ -20,7 +20,7 @@ header {
 }
 .pbtn {
   background-color: 'pink';
-  padding: 7;
+  padding: 7px;
   border-radius: 5;
 }
 .pbtn:hover {
@@ -76,9 +76,10 @@ header {
 }
 
 .imgcontainer {
-  width: 50px;
-  height: 45px;
-  padding: 10px;
+  width: 35px;
+  height: 35px;
+  /* padding: 5px; */
+  margin: 15px;
 }
 .imgcontainer:hover {
   cursor: pointer;
@@ -119,8 +120,8 @@ header {
   transition: all 1s ease;
 }
 .headercontainer .navBar .navList .navItem a:hover {
-  background-color: rgba(100, 98, 98, 0.55);
-  border-bottom: 3px solid tomato;
+  background-color: rgba(44, 45, 53, 0.55);
+  border-bottom: 3px solid rgb(243, 58, 26);
 
   /* color: rgb(119, 188, 188); */
 }

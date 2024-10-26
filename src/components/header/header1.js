@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './header.css';
+// import Logo1 from '../../assets/images/';
 import Logo1 from '../../assets/images/logo111.png';
+
 import Container from '../UI/Card/Container';
 import { IoIosMenu } from 'react-icons/io';
 import { AiFillCloseCircle } from 'react-icons/ai';
@@ -41,7 +43,7 @@ const Header1 = () => {
             alignItems: 'center',
             justifyContent: 'space-between',
           }}
-          className=" headercontainer"
+          className="headercontainer"
         >
           <Container className="imgcontainer">
             <img src={Logo1} alt="" />

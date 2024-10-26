@@ -22,7 +22,7 @@ const Frontend = () => {
         ml={15}
         // mt={100}
         mb={30}
-        font={60}
+        font={40}
         bold
         color={colors.cyanBlue}
         text="Things I've Built . "

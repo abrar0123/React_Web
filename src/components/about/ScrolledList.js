@@ -6,6 +6,8 @@ import f3 from '../../assets/Icons1/react.png';
 import f4 from '../../assets/Icons1/bootstrap.png';
 import f5 from '../../assets/Icons1/android.png';
 import f6 from '../../assets/Icons1/apple.png';
+import colors from '../../constants/colors';
+import { Text } from '../UI/Text';
 
 export const ScrolledList = () => {
   const logos = [f1, f2, f3, f4, f5, f6];
@@ -15,6 +17,7 @@ export const ScrolledList = () => {
       <div className="carousel-track">
         {logos.map((logo, index) => (
           <div key={index} className="carousel-item">
+            {/* <Text font={25} bold text="Android" /> */}
             <img
               style={{ width: 70, height: 70 }}
               src={logo}
